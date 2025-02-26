@@ -62,7 +62,7 @@ class EmployeeController {
 
     @DeleteMapping("/employees/{id}")
     void deleteEmployee(@PathVariable Long id) {
-        // Delte employye by finding the matching ID
+        // Delete employee by finding the matching ID
         repository.deleteById(id);
     }
 
